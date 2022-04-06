@@ -1,0 +1,594 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fredoka', sans-serif;
+    background-color: #EDF6E5;
+    color: #F38BA0;
+}
+
+.titulo{
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem;
+    text-decoration: solid #F38BA0 underline;
+}
+
+#mainGrid{
+    width: auto;
+    height: auto;
+    display: grid;
+    grid-template-areas: 
+    "nav"
+    "main"
+    "footer";
+    grid-template-columns: auto;
+    grid-template-rows: 10% auto 20% ;
+}
+
+#nav{
+    width: 100%;
+    height: auto;
+    grid-area: nav;
+}
+
+#main{
+    width: 100%;
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+}
+
+#footer{
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.navBar{
+    background-color: #B5EAEA;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    border-radius: 15px;
+    flex-wrap: nowrap;
+}
+
+.navBar img{
+    height: 100%;
+    background-color: #B5EAEA;
+}
+
+.navBar-list{
+    background-color: #B5EAEA;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 0 2rem;
+    justify-content: end;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+li{
+    list-style: none;
+    padding: 0 1rem;
+    background-color: #B5EAEA;
+}
+
+li a{
+    font-weight: bold;
+    background-color: #B5EAEA;
+    font-size: 20px;
+}
+
+a:hover{
+    color: #FFBCBC;
+}
+
+.banner{
+    width: 100%;
+    height: 900px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 2%;
+}
+
+.cardContainer{
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconCards{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    width: 15%;
+    height: 150px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;    
+}
+
+.card img{
+    width: 50px;
+    height: 50px;
+}
+
+.formContainer{
+    height: 25%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form{
+    background-color: #B5EAEA;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    margin: 2rem;
+    width: 400px;
+    margin-bottom: 4rem;
+    box-shadow:  5px 5px 15px rgba(0,0,0,0.9);
+}
+
+.form label{
+    background-color: #B5EAEA;
+}
+
+.btn{
+    width: 50%;
+    margin: 10px 100px 0 100px;
+}
+
+.links{
+    display: flex;
+    justify-content: center;
+}
+
+.imgLink{
+    height: 50px;
+    width: 50px;
+    margin: 2rem;
+}
+
+
+.table{
+    display: grid;
+    grid-template-columns: repeat(6, 200px);
+    grid-template-rows: repeat(5,200px);
+    justify-content: center;
+    gap: 5px;
+}
+
+.celda{
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+}
+
+.celda img{
+    width: 190px;
+    height: 190px;
+
+}
+.copy p{
+    color: black;
+    text-align: end;
+    padding: 0 1rem;
+}
+
+.recetasContainer{
+    display: flex;
+    width: 100%;
+    height: 70vh;
+    padding: 1rem;
+    border-radius: 15px;
+    background-color: #FFBCBC;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.cardRecetas{
+    width: 25%;
+    height: 100%;
+    display: grid;
+    grid-template-areas:
+    "imagen"
+    "texto";
+    grid-template-columns: 100%;
+    grid-template-rows: 70% 30%;
+    box-shadow:  5px 5px 15px rgba(0,0,0,0.9);
+    text-align: center;
+}
+
+
+.cardImagen1{
+    grid-area: imagen;
+    background-image: url("/GallucciNahuel/imagenes/recetas/Cuadrada 24_Cacerola 18_Bowls_Aqua_Cookies y huevo de pascuas.jpg");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+.cardImagen2{
+    grid-area: imagen;
+    background-image: url("/GallucciNahuel/imagenes/recetas/Sarten 31_Aqua_Pizza napolitana.jpg");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+.cardImagen3{
+    grid-area: imagen;
+    background-image: url("/GallucciNahuel/imagenes/recetas/Cuadrada 24_Cacerola 18_Bowls_Terra_Milanesas de merluza con pure mixto_pascuas.jpg");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+
+.cardTexto{
+    grid-area: texto;
+    font-size: 15px;
+    font-weight: 300;
+    align-content: center;
+}
+
+
+.blogCardContainer{
+    display: flex;
+    width: 100%;
+    height: 70vh;
+    padding: 1rem;
+    border-radius: 15px;
+    background-color: #FFBCBC;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.cardBlog{
+    width: 25%;
+    height: 100%;
+    display: grid;
+    grid-template-areas:
+    "texto"
+    "imagen";   
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 90%;
+    box-shadow:  5px 5px 15px rgba(0,0,0,0.9);
+    text-align: center;
+}
+
+.cardBlogImagen{
+    grid-area: imagen;
+    background-image: url(/GallucciNahuel/imagenes/recetas/historiaEssen.png);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+.cardBlogTexto{
+    grid-area: texto;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+iframe{
+    padding: 1rem;
+    margin: 2rem;
+}
+
+
+@media screen and (max-width: 390px){
+    
+body{
+    width: 390px;
+}
+
+    #mainGrid{
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-areas: 
+        "nav"
+        "main"
+        "footer";
+        grid-template-columns: auto;
+        grid-template-rows: 260px auto auto;
+    }
+    
+    #nav{
+        width: 390px;
+        background-color: #B5EAEA;
+        grid-area: nav;
+        display: flex;
+        justify-content: space-evenly;  
+        border-radius: 15px;
+    }
+    
+    #main{
+        width: 390px;
+        height: auto;
+        grid-area: main;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+    }
+    
+    #footer{
+        width: 100%;
+        height: auto;
+        grid-area: footer;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .navBar{
+        background-color: #B5EAEA;
+        width: 390px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 0;
+    }
+    
+    .navBar img{
+        width: 120px;
+        height: 120px;
+        background-color: #B5EAEA;
+    }
+    
+    .navBar-list{
+        background-color: #B5EAEA;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        padding: 0 0.5rem;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    
+    li{
+        list-style: none;
+        padding: 0 1rem;
+        background-color: #B5EAEA;
+    }
+    
+    li a{
+        font-weight: bold;
+        background-color: #B5EAEA;
+        font-size: 14px;
+    }
+    
+    a:hover{
+        color: #FFBCBC;
+    }
+    
+    .banner{
+        width: 390px;
+        height: auto;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        border-radius: 2%;
+    }
+    
+    .cardContainer{
+        padding: 1rem 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .card{
+        width: 40%;
+        height: 150px;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;   
+    }
+    
+    .card img{
+        width: 50px;
+        height: 50px;
+    }
+
+    .card h3{
+        font-size: 16px;
+        text-align: center;
+    }
+    
+    .formContainer{
+        height: 25%;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .form{
+        background-color: #B5EAEA;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        margin: 2rem;
+        width: 90%;
+        margin-bottom: 4rem;
+        box-shadow:  5px 5px 15px rgba(0,0,0,0.9);
+    }
+    
+    .form label{
+        background-color: #B5EAEA;
+    }
+    
+    .btn{
+        width: 50%;
+        margin: 10px 100px 0 100px;
+    }
+    
+    .links{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .imgLink{
+        height: 50px;
+        width: 50px;
+        margin: 1rem;
+    }
+    
+    .table{
+        display: grid;
+        grid-template-columns: repeat(3, 90px);
+        grid-template-rows: repeat(15, 90px);
+        justify-content: center;
+        gap: 3px;
+    }
+    
+    .celda{
+        width: 90px;
+        height: 90px;
+        border: 2px solid black;
+    }
+
+    .celda img{
+        width: 80px;
+        height: 80px;
+    }
+    
+    .copy p{
+        color: black;
+        text-align: end;
+        padding: 0 1rem;
+    }
+    
+    .recetasContainer{
+        display: flex;
+        width: 100%;
+        height: 70vh;
+        padding: 1rem;
+        border-radius: 15px;
+        background-color: #FFBCBC;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    .cardRecetas{
+        width: 30%;
+        height: 80%;
+        display: grid;
+        grid-template-areas:
+        "imagen"
+        "texto";
+        grid-template-columns: 100%;
+        grid-template-rows: 30% 70%;
+        box-shadow:  5px 5px 15px rgba(0,0,0,0.9);
+    }
+    
+    
+    .cardImagen1{
+        grid-area: imagen;
+        background-image: url("/GallucciNahuel/imagenes/recetas/Cuadrada 24_Cacerola 18_Bowls_Aqua_Cookies y huevo de pascuas.jpg");
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+    }
+    .cardImagen2{
+        grid-area: imagen;
+        background-image: url("/GallucciNahuel/imagenes/recetas/Sarten 31_Aqua_Pizza napolitana.jpg");
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+    }
+    .cardImagen3{
+        grid-area: imagen;
+        background-image: url("/GallucciNahuel/imagenes/recetas/Cuadrada 24_Cacerola 18_Bowls_Terra_Milanesas de merluza con pure mixto_pascuas.jpg");
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+    }
+    
+    
+    .cardTexto{
+        grid-area: texto;
+        font-size: 13px;
+        font-weight: 300;
+        align-content: center;
+        padding-top: 10px;
+    }
+    
+    
+    .blogCardContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 80vh;
+        padding: 0 1rem;
+        border-radius: 15px;
+        background-color: #FFBCBC;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    
+    .cardBlog{
+        width: 75%;
+        height: 300px;
+        display: grid;
+        grid-template-areas:
+        "texto"
+        "imagen";   
+        grid-template-columns: 100%;
+        grid-template-rows: 10% 90%;
+        box-shadow:  5px 5px 15px rgba(0,0,0,0.9);
+        text-align: center;
+    }
+    
+    .cardBlogImagen{
+        grid-area: imagen;
+        background-image: url(/GallucciNahuel/imagenes/recetas/historiaEssen.png);
+        width: 80%;
+        height: 90%;
+        background-size: cover;
+    }
+    
+    .cardBlogTexto{
+        grid-area: texto;
+        font-size: 10px;
+        font-weight: 300;
+    }
+    
+    iframe{
+        padding: 1rem;
+        margin: 1rem;
+        width: 350px;
+        height: 300px;
+    }
+
+}
+    

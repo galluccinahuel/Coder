@@ -276,7 +276,7 @@ a:hover{
 
 .cardBlogImagen{
     grid-area: imagen;
-    background-image: url(/GallucciNahuel/imagenes/recetas/historiaEssen.png);
+    background-image: url("GallucciNahuel/imagenes/recetas/historiaEssen.png");
     width: 100%;
     height: 100%;
     background-size: cover;

@@ -513,21 +513,21 @@ body{
     
     .cardImagen1{
         grid-area: imagen;
-        background-image: url("/GallucciNahuel/imagenes/recetas/Cuadrada 24_Cacerola 18_Bowls_Aqua_Cookies y huevo de pascuas.jpg");
+        background-image: url("GallucciNahuel/imagenes/recetas/Cuadrada 24_Cacerola 18_Bowls_Aqua_Cookies y huevo de pascuas.jpg");
         width: 100%;
         height: 100%;
         background-size: cover;
     }
     .cardImagen2{
         grid-area: imagen;
-        background-image: url("/GallucciNahuel/imagenes/recetas/Sarten 31_Aqua_Pizza napolitana.jpg");
+        background-image: url("GallucciNahuel/imagenes/recetas/Sarten 31_Aqua_Pizza napolitana.jpg");
         width: 100%;
         height: 100%;
         background-size: cover;
     }
     .cardImagen3{
         grid-area: imagen;
-        background-image: url("/GallucciNahuel/imagenes/recetas/Cuadrada 24_Cacerola 18_Bowls_Terra_Milanesas de merluza con pure mixto_pascuas.jpg");
+        background-image: url("GallucciNahuel/imagenes/recetas/Cuadrada 24_Cacerola 18_Bowls_Terra_Milanesas de merluza con pure mixto_pascuas.jpg");
         width: 100%;
         height: 100%;
         background-size: cover;
@@ -571,7 +571,7 @@ body{
     
     .cardBlogImagen{
         grid-area: imagen;
-        background-image: url(/GallucciNahuel/imagenes/recetas/historiaEssen.png);
+        background-image: url(GallucciNahuel/imagenes/recetas/historiaEssen.png);
         width: 80%;
         height: 90%;
         background-size: cover;

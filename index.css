@@ -571,7 +571,7 @@ body{
     
     .cardBlogImagen{
         grid-area: imagen;
-        background-image: url(GallucciNahuel/imagenes/recetas/historiaEssen.png);
+        background-image: url("GallucciNahuel/imagenes/recetas/historiaEssen.png");
         width: 80%;
         height: 90%;
         background-size: cover;
